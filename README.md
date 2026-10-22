@@ -1,16 +1,16 @@
 # NusaBookstore
 
-NusaBookstore adalah aplikasi toko buku sederhana berbasis Flutter yang dibuat untuk memenuhi tugas pemrograman perangkat bergerak. Aplikasi ini menggunakan Provider untuk mengelola state atau perubahan data pada aplikasi.
+NusaBookstore adalah aplikasi toko buku sederhana berbasis Flutter yang dibuat untuk memenuhi tugas pemrograman perangkat bergerak. Aplikasi ini menggunakan Provider untuk mengelola perubahan data pada aplikasi.
 
 ## Fitur Aplikasi
 
 - Menampilkan katalog buku.
-- Menampilkan informasi judul, penulis, dan harga buku.
+- Menampilkan judul, penulis, dan harga buku.
 - Menambahkan buku ke keranjang belanja.
-- Menambah dan mengurangi jumlah buku di keranjang.
+- Menambah dan mengurangi jumlah buku.
 - Menghitung jumlah buku dan total harga secara otomatis.
 - Melakukan checkout dengan notifikasi.
-- Mengubah tampilan antara mode terang dan mode gelap.
+- Mengubah tema terang dan gelap.
 
 ## Teknologi yang Digunakan
 
@@ -22,48 +22,42 @@ NusaBookstore adalah aplikasi toko buku sederhana berbasis Flutter yang dibuat u
 ## Struktur Folder
 
 ```text
-nusabookstore/
-├── lib/
-│   ├── models/
-│   │   └── book.dart
-│   ├── providers/
-│   │   ├── cart_provider.dart
-│   │   └── theme_provider.dart
-│   ├── screens/
-│   │   ├── catalog_screen.dart
-│   │   └── cart_screen.dart
-│   └── main.dart
-├── test/
-│   └── widget_test.dart
-├── pubspec.yaml
-└── README.md
+lib/
+├── models/
+│   └── book.dart
+├── providers/
+│   ├── cart_provider.dart
+│   └── theme_provider.dart
+├── screens/
+│   ├── cart_screen.dart
+│   └── catalog_screen.dart
+└── main.dart
+
+test/
+└── widget_test.dart
+
+pubspec.yaml
+README.md
 ```
 
 ## Cara Menjalankan Aplikasi
 
-1. Pastikan Flutter dan Dart sudah terpasang.
-2. Clone repository atau buka folder project di komputer.
-3. Buka terminal pada folder project.
-4. Jalankan perintah berikut untuk memasang dependensi:
+1. Pastikan Flutter sudah terpasang.
+2. Buka terminal pada folder project.
+3. Jalankan perintah:
 
-   ```bash
-   flutter pub get
-   ```
+   `flutter pub get`
 
-5. Jalankan aplikasi menggunakan perintah:
+4. Jalankan aplikasi:
 
-   ```bash
-   flutter run
-   ```
+   `flutter run`
 
 ## Pengujian
 
-Pengujian widget dijalankan menggunakan perintah:
+Jalankan perintah berikut untuk menguji aplikasi:
 
-```bash
-flutter test
-```
+`flutter test`
 
 ## Tujuan
 
-Project ini dibuat untuk mempelajari pengembangan aplikasi Flutter, penggunaan Provider sebagai state management, pengelolaan keranjang belanja, serta penerapan tema terang dan gelap.
+Project ini dibuat untuk mempelajari pengembangan aplikasi Flutter, penggunaan Provider sebagai state management, pengelolaan keranjang belanja, dan penerapan tema terang serta gelap.
